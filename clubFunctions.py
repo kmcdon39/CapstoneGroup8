@@ -10,3 +10,6 @@ app = Flask(__name__)
 def getMembers():
     members = 50
     return render_template('club.html', members=members)
+
+if __name__ == "__main__":
+    app.run()
