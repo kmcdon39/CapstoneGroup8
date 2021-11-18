@@ -4,44 +4,62 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/custom.18d3a4a7.css">
-  </head>
-  <body>
 
-    <div class="container">
-      <h1>Niner Engage V.2</h1>
-    </div>
-
-    <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #005035;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/uncclogo.8e87cde7.png" alt="uncc logo" style="height: 50px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">My Clubs</a>
+              <a class="nav-link active" aria-current="page" href="/studentHome.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Find Clubs</a>
+              <a class="nav-link" href="/submitClub.html">Submit Club</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                My Clubs
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/club.html">Chess Club</a></li>
+                <li><a class="dropdown-item" href="#">Zeta Tau Alpha</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Find Clubs
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/findClubs.html">Current Clubs</a></li>
+                <li><a class="dropdown-item" href="#">Pending Clubs</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Submit A Club</a>
+              <a class="nav-link" aria-current="page" href="/login.html">Login</a>
             </li>
           </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
         </div>
       </div>
     </nav>
-  </div>
+  <script src="/submitClub.js"></script></head>
+  <body>
 
   <div class="container" style="padding-top: 25px;">
     <div class="row">
       <div class="col">
         <div class="container" id="clubList" style="max-width: 400px;">
           <h4>Top 10 Most Active Clubs</h4>
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">Chess Club</a>
+          <div class="list-group bg-light">
+            <a href="/club.html" class="list-group-item list-group-item-action">Chess Club</a>
             <a href="#" class="list-group-item list-group-item-action">Frisbee Golf</a>
             <a href="#" class="list-group-item list-group-item-action">Nature Painters</a>
             <a href="#" class="list-group-item list-group-item-action">Pickup Soccer Org</a>
@@ -55,7 +73,7 @@
         </div>
       </div>
 
-      
+
       <div class="col">
         <div class="container" id="clubList" style="max-width: 300px; max-height: 300px;">
           <h4>Weekly Club Highlights</h4>
@@ -82,12 +100,9 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <img src="/bootstrap-logo.a1392778.png" class="img-fluid" style="float: right; max-width: 300px; max-height: 200px;">
-      </div>
     </div>
   </div>
 
-  <script src="/src.e31bb0bc.js"></script>
+  <script src="/templates.e31bb0bc.js"></script>
   </body>
 </html>
