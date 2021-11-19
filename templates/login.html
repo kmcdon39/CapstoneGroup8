@@ -1,46 +1,10 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../scss/custom.scss">
-  </head>
-  <body>
-    <div class="container mt-3">
-        <div class="row justify-content-center">
-          <div class="col-4 bg-light">
-            <form class="border-end ps-3 pb-5 pt-3 pe-5" action="/studentHome.html">
-              <h3>Student Login</h3>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="pass" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" required>
-              </div>
-              <div class="mb-3">
-                <a href="/newUser.html">Sign Up</a>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-          <div class="col-4 bg-light">
-            <form class="pb-5 pt-3 px-3" action="/studentHome.html">
-              <h3>Employee Login</h3>
-              <div class="mb-3">
-                <label for="employeeEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="employeeEmail" required>
-              </div>
-              <div class="mb-3">
-                <label for="employeePass" class="form-label">Password</label>
-                <input type="password" class="form-control" id="employeePass" required>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-        </div>
-    </div>
-  <script src="./index.js"></script>
-  </body>
-</html>
+{% extends "base.html" %}
+{% block title %}Login Page{% endblock %}
+
+{% block content %}
+<form action="#" method="post">
+	<p>StudentID:</p>
+	<p><input type="text" name="student" /></p>
+	<p><input type="submit" value="submit"/></p>
+</form>
+{% endblock %}
