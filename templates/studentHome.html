@@ -2,9 +2,9 @@
 {% block title %}{% endblock %}
 {% block content %}
 <div class="container" style="padding-top: 25px;">
-  <p> {{user}} </p>
+  <p style="text-align: center"> UserID: {{user}} </p>
   <div class="row">
-    <div class="col">
+    <div class="col-5">
       <div class="container" id="clubList" style="max-width: 400px;">
         <h4>Top 10 Most Active Clubs</h4>
         <div class="list-group bg-light">
@@ -13,42 +13,20 @@
           <a href="#" class="list-group-item list-group-item-action">Nature Painters</a>
           <a href="#" class="list-group-item list-group-item-action">Pickup Soccer Org</a>
           <a href="#" class="list-group-item list-group-item-action">CAB</a>
-          <a href="#" class="list-group-item list-group-item-action">Some Other Club</a>
-          <a href="#" class="list-group-item list-group-item-action">Nature Painters</a>
+          <a href="#" class="list-group-item list-group-item-action">Archery</a>
+          <a href="#" class="list-group-item list-group-item-action">Alpha Sigma Phi</a>
           <a href="#" class="list-group-item list-group-item-action">Pickup Soccer Org</a>
-          <a href="#" class="list-group-item list-group-item-action">CAB</a>
-          <a href="#" class="list-group-item list-group-item-action">Some Other Club</a>
+          <a href="#" class="list-group-item list-group-item-action">Rho Tau Sigma</a>
+          <a href="#" class="list-group-item list-group-item-action">Investment Club</a>
         </div>
       </div>
     </div>
+    <div class="col-2">
+    </div>
 
-
-    <div class="col">
-      <div class="container" id="clubList" style="max-width: 300px; max-height: 300px;">
+    <div class="col-3">
         <h4>Weekly Club Highlights</h4>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../static/one.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../static/two.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../static/three.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </div>
+            <img src="../static/clubpic.jpg" class="d-block" alt="..." style="width: 100%">
   </div>
 </div>
 {% endblock %}

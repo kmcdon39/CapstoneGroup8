@@ -28,8 +28,8 @@
                </tr>
             </tbody>
          </table>
-         <button type="button" value="selectAll" class="main" onclick="checkAll()">Select All</button>
-         <button type="button" value="deselectAll" class="main" onclick="uncheckAll()">Clear</button>
+         <button type="button" value="selectAll" class="main" onclick="checkAll1()">Select All</button>
+         <button type="button" value="deselectAll" class="main" onclick="uncheckAll1()">Clear</button>
       </div>
 
    <div class="container">
@@ -55,14 +55,14 @@
                   </tr>
                </tbody>
             </table>
-            <button type="button" value="selectAll" class="main" onclick="checkAll()">Select All</button>
-            <button type="button" value="deselectAll" class="main" onclick="uncheckAll()">Clear</button>
+            <button type="button" value="selectAll" class="main" onclick="checkAll2()">Select All</button>
+            <button type="button" value="deselectAll" class="main" onclick="uncheckAll2()">Clear</button>
          </div>
       </div>
 </div>
 <script type="text/javascript">
    // Select all check boxes
-     function checkAll(){
+     function checkAll1(){
        var items = document.getElementsByName('Category');
          for (var i = 0; i < items.length; i++) {
              if (items[i].type == 'checkbox')
@@ -70,13 +70,29 @@
          }
      }
    // Clear all
-     function uncheckAll(){
+     function uncheckAll1(){
        var items = document.getElementsByName('Category');
          for (var i = 0; i < items.length; i++) {
              if (items[i].type == 'checkbox')
                  items[i].checked = false;
          }
      }
+     // Select all check boxes
+       function checkAll2(){
+         var items = document.getElementsByName('Size');
+           for (var i = 0; i < items.length; i++) {
+               if (items[i].type == 'checkbox')
+                   items[i].checked = true;
+           }
+       }
+     // Clear all
+       function uncheckAll2(){
+         var items = document.getElementsByName('Size');
+           for (var i = 0; i < items.length; i++) {
+               if (items[i].type == 'checkbox')
+                   items[i].checked = false;
+           }
+       }
 </script>
 
 <!-- Create table corresponding to checkboxes -->
