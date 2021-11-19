@@ -10,3 +10,10 @@ class Clubs(db.Model):
         Size = db.Column("Size", db.Integer)
         Activity = db.Column("Activity", db.Integer)
         Communication = db.Column("Communication", db.VARCHAR)
+
+        def __init__(self, name, ClubID, Size, Activity, Communication):
+            self.name = name
+            self.ClubID = ClubID
+            self.Size = Size
+            self.Activity = Activity
+            self.Communication = Communication
