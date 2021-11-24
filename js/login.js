@@ -75,12 +75,13 @@ const Form = ({onSubmit}) => {
     );
 };
 
-// have to open inspect and the look in console to see it right now
+// Usage example:
 
 const App = () => {
-    const handleSubmit = (data) => {
-      data.preventDefault();
-     this.props.history.push('/studentHome')
+    const handleSubmit = data => {
+        const json = JSON.stringify(data, null, 4);
+        console.clear();
+        console.log(json);
     };
     return (
       <div style={appStyle}>

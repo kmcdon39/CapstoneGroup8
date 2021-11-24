@@ -29573,10 +29573,9 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-var _this = void 0;
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// Note: Uncomment import lines during working with JSX Compiler.
 var appStyle = {
   height: '250px',
   display: 'flex'
@@ -29658,14 +29657,14 @@ var Form = function Form(_ref2) {
     style: submitStyle,
     type: "submit"
   }, "Sign In")));
-}; // have to open inspect and the look in console to see it right now
+}; // Usage example:
 
 
 var App = function App() {
   var handleSubmit = function handleSubmit(data) {
-    data.preventDefault();
-
-    _this.props.history.push('/studentHome');
+    var json = JSON.stringify(data, null, 4);
+    console.clear();
+    console.log(json);
   };
 
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -29706,7 +29705,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64861" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64296" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
