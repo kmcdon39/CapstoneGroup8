@@ -1,0 +1,27 @@
+.clubCard {
+    margin-left: 60px;
+    margin-right: 30px;
+    width: auto;
+    border-radius: 8px;
+    background-color: #198754;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    position: relative;
+    // height: 150px;
+    display: block;
+    margin-top: 50px; /* changed */
+    overflow: visible;
+  }
+.imageContainer{
+    position: absolute;
+    width: 400px; /*the image width*/
+    height: 400px; /*the image height*/
+    left: 50%;
+    top: 50%;
+    margin-left: -150px; /*half the image width*/
+    margin-top: -150px; /*half the image height*/
+  }
+
+
+/*# sourceMappingURL=/like_button.53be9796.css.map */
